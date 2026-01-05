@@ -44,9 +44,9 @@ export function AppSidebar() {
 
   return (
     <Sidebar collapsible="icon">
-      <SidebarHeader className="flex flex-row items-center justify-between p-4">
-        {state === "expanded" && <span className="font-semibold text-lg">Agri-Vision</span>}
-        <SidebarTrigger />
+      <SidebarHeader className="flex flex-row items-center justify-between p-2">
+        {state === "expanded" && <span className="font-semibold text-lg px-2">Agri-Vision</span>}
+        <SidebarTrigger className={state === "collapsed" ? "mx-auto" : ""} />
       </SidebarHeader>
       <SidebarContent>
         <SidebarGroup>
